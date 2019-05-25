@@ -17,7 +17,7 @@ Obtain a set of chainmail leggings and rename them to `Magnet` in an anvil. Now,
 * Regular chainmail leggings are unaffected and can be used normally.
 * Teleports items to you in a 5 block radius.
   * Only one item entity at a time is teleported on purpose, so you can't trail stacks of items behind you as you move like you can with most modded magnets.
-* Makes all items in a 10 block radius play a quiet sound to help you find them.
+* Makes all items in a 10 block radius play a quiet sound (from the "player" sound category) to help you find them.
   * Plays a quieter, pitch shifted version of the Experience Bottle Thrown sound, if you have captions enabled.
   * More item entities causes the sound to stack and get louder.
 * Any mob that can wear the chainmail leggings in its legs slot will have the magnet effect applied on equip.
