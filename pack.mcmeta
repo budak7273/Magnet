@@ -1,0 +1,6 @@
+ {
+       "pack": {
+           "pack_format": 3,
+           "description": "Makes chainmail leggings that are held and renamed to 'Magnet' act as an item magnet in a 5 block radius. Makes items within 10 blocks make noise."
+       }
+   }

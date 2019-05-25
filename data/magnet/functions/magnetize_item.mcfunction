@@ -1,0 +1,2 @@
+execute as @e[type=minecraft:item, distance=0..10] at @s run playsound minecraft:entity.experience_bottle.throw player @p ~ ~ ~ .01 2 .002
+tp @e[limit=1,sort=nearest,distance=0..5,type=minecraft:item] @s
