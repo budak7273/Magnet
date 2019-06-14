@@ -1,6 +1,8 @@
 # Magnet
 Survival-friendly datapack for Minecraft that adds an item magnet which attracts items to the wielder in a small radius.
 
+## Download [here](https://github.com/budak7273/magnet/releases), put zip in your save's datapacks folder, then run `/reload` to install.
+
 ![Magnet item tooltip](https://i.imgur.com/84YWGfQ.png)
 
 Craft chainmail leggings using a custom recipe to obtain a magnet.
