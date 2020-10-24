@@ -10,18 +10,50 @@ Craft chainmail leggings using a custom recipe to obtain a magnet.
 ![Magnet crafting recipe](https://i.imgur.com/Rf1a2TE.png)
 
 ## Features
+* Lag friendly!
+* Configurable!
+  * Run `/function magnet:toggle_options_pane` to see options.
 * Brings items to you!
   * Break blocks over a void without fear of dropping items off the edge.
 * Survival friendly
   * Custom crafting recipe provides a method of obtaining magnets in a survival playthrough
-* Item entities play a quiet sound to help you locate nearby them.
+* Nearby item entities play a quiet sound to help you locate them (configurable)
 * Works for multiple players at once
-* Wear a magnet as pants
-* Mobs can also use magnets
-  * Make a magnet powered mobfarm! Use mobs wearing magnets to gather items to a hopper and save on hoppers
-  * Mobs with magnets can attract and equip your gear if you die. Don't die near a mob with a magnet.
-* Particles are displayed when an item is brought to a magnet user
-* Works on Spigot
+* Wear a magnet as pants!
+  * Both functional _and_ stylish.
+* Mobs can also use magnets (configurable)
+  * Make a magnet powered mobfarm! Use mobs (or armor stands) wearing magnets to gather items to a hopper and save on hoppers
+  * Mobs with magnets can attract and equip your gear if you die. (disabled by default) Don't die near a mob with a magnet.
+* Particles are displayed when an item is brought to a magnet user (configurable)
+* Works on Spigot/Paper/Etc.
+
+## Commands
+* `/function magnet:toggle_options_pane`
+  * Toggles the options pane to show/hide the current config settings.
+* `/function magnet:give_magnet`
+  * Gives yourself a magnet if you don't want to craft one.
+* `/function magnet:magnetize_item`
+  * Manually teleport an item entity within range to you as if you were holding a magnet.
+* `/function magnet:default_configs`
+  * Reset back to the default config options (see below)
+* `/function magnet:reinstall`
+  * Reinstall the pack from scratch and reload, also resetting all of your configs to the default.
+* `/function magnet:uninstall`
+  * Run before uninstalling - cleans up all scoreboard values and such. Does not delete existing magnet items.
+* `/function magnet:debug_list_holders`
+  * Debug command to mark and list all loaded entities that are holding magnets. Helpful for tracking down rogue magnets.
+
+## Config Options
+* `m_mob_interval` (Default 20) - The number of ticks between magnets working for mobs. 20 ticks in one second.
+* `m_player_interval` (Default 5) - The number of ticks between magnets working for players. 20 ticks in one second.
+* `armorStand` (Default 1) - If magnets work when equipped on armor stands.
+* `playerHands` (Default 1) - If magnets work when in the player's main or offhand
+* `playerEquip` (Default 1) - If magnets work when in the player's legs slot.
+* `particlesOnHolder` (Default 1) - If particles should be spawned on the magnet user when an item is attracted.
+* `particlesOnItem` (Default 1) - If particles should be spawned at the old location of the item when an item is attracted.
+* `playItemSound` (Default 1) - If items should play a sound when within 10 blocks of a magnet user.
+* `enabledActionbarText` (Default 1) - If having a magnet equipped should display text in your action bar.
+* `allMobs_Laggy` (Default 0) - If magnets work for every mob than can equip armor. This can be quite laggy to enable.
 
 ## Further Details
 * I tried to document exactly how everything works via comments in the function files. Feel free to contact me with any questions.
