@@ -1,2 +1,5 @@
 # Gives the caller one properly formatted magnet item. The cause of the actual magnetism is the {isMagnet:1b} tag.
 give @s minecraft:chainmail_leggings{isMagnet:1b, display:{Lore:["{\"text\":\" \"}", "{\"text\":\"When in main hand:\",\"color\":\"gray\",\"italic\":false}", "{\"text\":\"When in offhand:\",\"color\":\"gray\",\"italic\":false}", "{\"text\":\"When on legs:\",\"color\":\"gray\",\"italic\":false}", "{\"text\":\" 5 Block Item Magnetism\",\"color\":\"dark_green\",\"italic\":false}","{\"text\":\" 10 Block Item Sense\",\"color\":\"dark_green\",\"italic\":false}", "{\"text\":\"Works when equipped by mobs.\",\"color\":\"gray\"}"], Name:"{\"text\":\"Magnet\",\"italic\":false,\"color\":\"yellow\"}"}, HideFlags: 63, Unbreakable:1,Enchantments:[{id:"minecraft:invalid_enchantment_for_glimmer",lvl:1}]} 1
+
+# Play a sound
+execute as @s at @s run playsound minecraft:block.anvil.use voice @s ~ ~ ~ 1 1.5
