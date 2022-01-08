@@ -73,5 +73,9 @@ Craft chainmail leggings using a custom recipe to obtain a magnet.
 * I used an [online tellraw generator](https://minecraft.tools/en/tellraw.php) to produce tellraw commands - those are a pain.
 * Multiple stackoverflow, reddit, and minecraft forums posts explaining command behavior and nitpicky syntax were read in the process of squashing bugs.
 
-## Planned features
+## Known Bugs
+* Because Minecraft advancements are buggy, trading with a villager for Chainmail Leggings counts as crafting them using the custom recipe.
+	* If you need regular chainmail leggings, either drop them out of the villager window, or craft 2 magnets together and directly drop the product out of the crafting window, then wait for 5 seconds (you should see a message in chat when it's safe to pick them up)
+
+## Planned features (Eventually™)
 * Offer a resource pack to clients that retextures the magnet item.
