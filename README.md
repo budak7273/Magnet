@@ -42,6 +42,8 @@ Craft chainmail leggings using a custom recipe to obtain a magnet.
   * Run before uninstalling - cleans up all scoreboard values and such. Does not delete existing magnet items.
 * `/function magnet:debug_list_holders`
   * Debug command to mark and list all loaded entities that are holding magnets. Helpful for tracking down rogue magnets.
+* `/scoreboard objectives setdisplay sidebar m_total_crafted_magnets`
+  * Display the total crafted magnets stats scoreboard in the sidebar
 
 ## Config Options
 * `m_mob_interval` (Default 20) - The number of ticks between magnets working for mobs. 20 ticks in one second.

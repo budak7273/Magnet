@@ -6,6 +6,9 @@ scoreboard objectives add m_craft_leggings minecraft.crafted:minecraft.chainmail
 scoreboard objectives add m_count_magnets dummy
 scoreboard objectives add m_count_reg_legs dummy
 
+# Fun crafted magnets counter
+scoreboard objectives add m_total_crafted_magnets dummy "Magnets Crafted"
+
 # Set up scoreboard values for timed magnetization and internal settings
 scoreboard objectives add m_internals dummy "Magnet Internal"
 

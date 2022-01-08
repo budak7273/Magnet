@@ -7,6 +7,9 @@ function magnet:give_magnet
 scoreboard players remove @s m_count_reg_legs 1
 scoreboard players remove @s m_craft_leggings 1
 
+# bump the total magnets crafted counter
+scoreboard players add @s m_total_crafted_magnets 1
+
 # Run this function again if there are still magnets to return (?)
 execute if score @s m_count_reg_legs matches 1.. if score @s m_craft_leggings matches 1.. run function magnet:while003_give_magnets_when_new_crafted
 
