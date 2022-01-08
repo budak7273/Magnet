@@ -1,5 +1,5 @@
 # Based off of watermill:while042_ln165
-say Running while004_return_regular_leggings
+#say Running while004_return_regular_leggings
 
 # Give the caller regular leggings
 give @s chainmail_leggings 1
