@@ -1,10 +1,7 @@
 {
-	"group": "magnet",
     "type": "minecraft:crafting_shaped",
-	"result": {
-        "count": 1,
-		"item": "minecraft:chainmail_leggings"
-    },
+    "group": "magnet",
+    "category": "equipment",
     "key": {
         "I": {
             "item": "minecraft:iron_ingot"
@@ -16,9 +13,14 @@
             "item": "minecraft:red_dye"
         }
     },
-	"pattern": [
+    "pattern": [
         "III",
         "I I",
         "B R"
-    ]
+    ],
+    "result": {
+        "id": "minecraft:chainmail_leggings",
+        "count": 1,
+        "components": {}
+    }
 }
