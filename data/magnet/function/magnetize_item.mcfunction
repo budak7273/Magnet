@@ -13,6 +13,9 @@ execute if score enabledActionbarText m_options matches 1 run title @s actionbar
 # Particles on item
 execute if score particlesOnItem m_options matches 1 run execute as @e[limit=1,sort=nearest,distance=0..5,type=minecraft:item] at @s if entity @e[distance=0..5, type=item] run particle minecraft:reverse_portal ~ ~.25 ~ 0 0 0 0.1 3 normal
 
+# TODO figure out how to dynamically select this particle's destination
+# /particle minecraft:vibration{destination:{type:"block", pos:[0,0,0]}, arrival_in_ticks:100}
+
 # Teleport nearest item entity to the function's caller 
 tp @e[limit=1,sort=nearest,distance=0..5,type=minecraft:item] @s
 # Move 1 block towards the holder's feet (broken)

@@ -1,6 +1,6 @@
- {
-       "pack": {
-           "pack_format": 3,
-           "description": "More info here: http://bit.ly/MagnetDatapack"
-       }
-   }
+{
+    "pack": {
+        "pack_format": 48,
+        "description": "Magnet v4.0.0 for Minecraft 1.21. More info here: http://bit.ly/MagnetDatapack"
+    }
+}

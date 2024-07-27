@@ -1,14 +1,6 @@
 # Print load message
 tellraw @a ["",{"text":"\u2714","color":"dark_green"},{"text":" Magnet datapack loaded.\nGet some iron and go craft a "},{"text":"Magnet","color":"yellow"},{"text":".\nMore info "},{"text":"here","underlined":true,"clickEvent":{"action":"open_url","value":"http://bit.ly/MagnetDatapack"}},{"text":".\nTo configure the datapack, click "}, {"text":"[here]","color":"yellow","clickEvent":{"action":"run_command","value":"/function magnet:toggle_options_pane"},"hoverEvent":{"action":"show_text","contents":"Toggle options pane"}},{"text":"\nor type: "},{"text":"/function magnet:toggle_options_pane","color":"yellow","clickEvent":{"action":"suggest_command","value":"/function magnet:toggle_options_pane"},"hoverEvent":{"action":"show_text","contents":"Click to suggest"}},{"text":"\n "}]
 
-# Set up scoreboard values for tracking crafting of chainmail leggings
-scoreboard objectives add m_craft_leggings minecraft.crafted:minecraft.chainmail_leggings
-scoreboard objectives add m_count_magnets dummy
-scoreboard objectives add m_count_reg_legs dummy
-
-# Fun crafted magnets counter
-scoreboard objectives add m_total_crafted_magnets dummy "Magnets Crafted"
-
 # Set up scoreboard values for timed magnetization and internal settings
 scoreboard objectives add m_internals dummy "Magnet Internal"
 
@@ -45,4 +37,3 @@ scoreboard players operation optionsOpen m_internals *= optionsOpen m_internals
 
 # If setup never ran, run setup script
 execute if score ranSetup m_internals matches 0 run function magnet:default_configs
-

@@ -1,6 +1,3 @@
-# Detect players that have crafted at least one pair of leggings and deal with that
-execute as @a[scores={m_craft_leggings=1..}] if score @s m_craft_leggings matches 1.. run function magnet:while001_crafted_legs
-
 # Increment global timers by 1
 scoreboard players add m_timer_player m_internals 1
 scoreboard players add m_timer_mob m_internals 1

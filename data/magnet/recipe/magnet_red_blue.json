@@ -1,26 +1,45 @@
 {
-    "type": "minecraft:crafting_shaped",
-    "group": "magnet",
-    "category": "equipment",
-    "key": {
-        "I": {
-            "item": "minecraft:iron_ingot"
-        },
-        "R": {
-            "item": "minecraft:red_dye"
-        },
-        "B": {
-            "item": "minecraft:blue_dye"
-        }
-    },
-    "pattern": [
-        "III",
-        "I I",
-        "R B"
-    ],
-    "result": {
-        "id": "minecraft:chainmail_leggings",
-        "count": 1,
-        "components": {}
-    }
+	"type": "minecraft:crafting_shaped",
+	"group": "magnet",
+	"category": "equipment",
+	"key": {
+		"I": {
+			"item": "minecraft:iron_ingot"
+		},
+		"R": {
+			"item": "minecraft:red_dye"
+		},
+		"B": {
+			"item": "minecraft:blue_dye"
+		}
+	},
+	"pattern": [
+		"III",
+		"I I",
+		"R B"
+	],
+	"result": {
+		"__comment": "Remember to keep in sync with the other recipe file!",
+		"id": "minecraft:chainmail_leggings",
+		"count": 1,
+		"components": {
+			"minecraft:enchantment_glint_override": true,
+			"minecraft:custom_name": "[{'text':'Magnet','italic':false,'color':'yellow'}]",
+			"hide_additional_tooltip": {},
+			"minecraft:lore": [
+				"[{'text':''}]",
+				"[{'text':'When in Main Hand:',              'italic':false,      'color':'gray'}]",
+				"[{'text':'When in Off Hand:',               'italic':false,      'color':'gray'}]",
+				"[{'text':'When on Legs:',                   'italic':false,      'color':'gray'}]",
+				"[{'text':' 5 Block Item Magnetism',         'italic':false,      'color':'dark_green'}]",
+				"[{'text':' 10 Block Item Sense',            'italic':false,      'color':'dark_green'}]",
+				"[{'text':'Works when equipped by mobs',     'italic':true,       'color':'gray'}]",
+				"[{'text':'when configuration enables it.',  'italic':true,       'color':'gray'}]"
+			],
+			"minecraft:custom_data": {
+				"isMagnet": true
+			},
+			"minecraft:unbreakable": {}
+		}
+	}
 }
