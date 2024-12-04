@@ -1,17 +1,11 @@
 {
 	"type": "minecraft:crafting_shaped",
-	"group": "magnet",
 	"category": "equipment",
+	"group": "magnet",
 	"key": {
-		"I": {
-			"item": "minecraft:iron_ingot"
-		},
-		"B": {
-			"item": "minecraft:blue_dye"
-		},
-		"R": {
-			"item": "minecraft:red_dye"
-		}
+		"I": "minecraft:iron_ingot",
+		"R": "minecraft:red_dye",
+		"B": "minecraft:blue_dye"
 	},
 	"pattern": [
 		"III",
